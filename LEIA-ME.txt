@@ -1,0 +1,38 @@
+MAR ABERTO — VERSÃO ATUALIZADA
+
+COMO EXECUTAR
+1. Extraia a pasta Jogo por inteiro; não separe a pasta Models do arquivo index.html.
+2. Recomendado: abra a pasta Jogo no Visual Studio Code e execute com a extensão Live Server.
+3. Alternativa com Python: abra um terminal dentro da pasta Jogo e execute:
+      python -m http.server 8000
+   Depois abra no navegador:
+      http://localhost:8000/index.html
+
+A página usa módulos Three.js e uma textura de água carregados pela internet.
+
+CONTROLES
+W / S ou setas para cima/baixo: subir e descer
+A / D ou setas esquerda/direita: virar
+Espaço: turbo
+Clique esquerdo ou F: mordida
+Clique direito: tentar engolir uma presa significativamente menor
+Esc ou P: abrir/fechar o menu durante a partida
+R: inverter a orientação do modelo, quando disponível
+
+ALTERAÇÕES DESTA VERSÃO
+- Removido o tubarão branco realista e seu modelo 3D.
+- Ataque básico e engolir agora têm efeitos/tempos diferentes.
+- Mordidas causam dano, mostram a vida dos inimigos e podem soltar carne e sangue na água.
+- Caranguejos também têm vida, podem ser feridos e reaparecem depois de um tempo.
+- Reduzida levemente a quantidade de cardumes, bots e caranguejos.
+- Removidas as sementes decorativas flutuantes das algas.
+- Adicionada uma barreira invisível no fundo do mar.
+- Ajustada a gravidade ao sair da água em alta velocidade.
+- Adicionado menu inicial antes de começar a partida.
+
+VERSÃO 2 — INTERFACE E MECÂNICAS
+- Abra SEMPRE a partir da pasta Jogo inteira (index.html + pasta Models + capa.jpg), com Live Server ou python -m http.server.
+  Se os modelos .glb não carregarem, o menu mostra um aviso e o botão "Carregar modelos (.glb)" para escolhê-los manualmente.
+- Capa do jogo: capa.jpg (usada no menu principal, no ícone da aba e como miniatura).
+- Animais são comprados com moedas; evoluir (subir de nível) aumenta apenas o dano e o tamanho.
+- A tela de seleção de animal mostra o modelo 3D da pasta Models (pré-visualização girando e miniaturas nos cards).
